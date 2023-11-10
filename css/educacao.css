@@ -149,10 +149,10 @@
     .educacao .subtitulo{
         color: #EDEDED;
     }
-    .educacao-titulos-listas, .formacao-nome-curso, .lista-cursos, .lista-idiomas{
+    .educacao-titulos-listas, .formacao-nome-curso, .lista-cursos, .lista-idiomas, .lista-horas, .lista-idiomas-nivel{
         font-size: 1.0rem;
     }
-    .formacao-ano, .formacao-faculdade, .formacao-tipo, .lista-horas, .lista-idiomas-nivel{
+    .formacao-ano, .formacao-faculdade, .formacao-tipo{
         font-size: 0.9rem;
     }
 }
