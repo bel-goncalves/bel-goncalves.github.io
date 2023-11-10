@@ -92,5 +92,11 @@ a{
     .footer-subtitulo{
         text-transform: capitalize;
         color: #EDEDED;
+        font-size: 3rem;
+    }
+    .footer-subtitulo::before{
+        width: 30px;
+        height: 6px;    
+        margin-left: 3.8px;
     }
 }
