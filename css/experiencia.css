@@ -70,7 +70,6 @@
     align-items: center;
     gap: 10px; 
     flex-wrap: wrap;
-    grid-row: 2;
 }
 
 .projeto-habilidades li{
@@ -95,6 +94,7 @@
     padding: 4px 8px;
     border-radius: 4px;
     transition: 0.2s;
+    max-width: max-content;
 }
 
 .links a:hover{
@@ -102,6 +102,13 @@
     background: #A7EBEB;
 }
 
+@media (max-width: 900px){
+    .links{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
 
 @media (max-width: 800px){
     .experiencia{
@@ -112,7 +119,13 @@
         color: #2E2E2E;
         margin-bottom: 20px;
     }
-    .projeto-texto, .projeto-habilidades li, .experiencia-texto{
+    .projetos{
+        gap: 8px 18px;
+    }
+    .projeto-texto, 
+    .projeto-habilidades li, 
+    .experiencia-texto,
+    .links a{
         font-size: 0.9rem;
     }
     .projeto-empresa-titulo {
@@ -130,19 +143,22 @@
         margin-left: 18px;
         margin-top: 4px;
     }    
+    .links{
+        gap: 4px;
+    }
 }
 
 @media (max-width: 420px){
-    .projetos{
-        grid-template-columns: 1fr;
+    .projeto-habilidades,
+    .projeto-texto,
+    .links{
+        grid-column: 1/-1;
     }
-    .projeto-empresa-titulo{
-        grid-row: 1;
-    }
-    .projeto-texto {
-        grid-row: 3;
+    .links{
+        display: flex;
+        gap: 20px;
     }
     .projeto-ano{
-        grid-row: 4;
+        grid-row: 1;
     }
 }
