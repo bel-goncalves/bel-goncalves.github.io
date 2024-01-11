@@ -85,6 +85,7 @@
     position: absolute;
     margin: -25px;
     margin-top: 4px;
+    border-radius: 1px;
 }
 
 .cursos-elementos{
